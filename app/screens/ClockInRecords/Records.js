@@ -95,7 +95,7 @@ const Altitude = ({ info }) => (
     style={styles.geographicContainer}
   >
     <AltitudeIcon size={40} colour={colours.white} />
-    <Text style={styles.geographicInfoText}>Altitude: {info}</Text>
+    <Text numberOfLines={2} style={styles.geographicInfoText}>Altitude: {info}</Text>
   </LinearGradient>
 );
 
@@ -105,7 +105,7 @@ const Latitude = ({ info }) => (
     colors={[colours.gradientBlueDark, colours.gradientBleLight]}
   >
     <LatitudeIcon size={40} colour={colours.white} />
-    <Text style={styles.geographicInfoText}>Latitude: {info}</Text>
+    <Text numberOfLines={2} style={styles.geographicInfoText}>Latitude: {info}</Text>
   </LinearGradient>
 );
 
@@ -115,7 +115,7 @@ const Longitude = ({ info }) => (
     colors={[colours.gradientBlueDark, colours.gradientBleLight]}
   >
     <LongitudeIcon size={40} colour={colours.white} />
-    <Text style={styles.geographicInfoText}>Longitude: {info}</Text>
+    <Text numberOfLines={2} style={styles.geographicInfoText}>Longitude: {info}</Text>
   </LinearGradient>
 );
 

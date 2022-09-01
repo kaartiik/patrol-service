@@ -25,6 +25,8 @@ import commonStyles from '../../providers/constants/commonStyles';
 import colours from '../../providers/constants/colours';
 import { getSites } from '../../providers/actions/Sites';
 
+import { Ionicons } from '@expo/vector-icons';
+
 // import { AuthContext } from '../navigation/AuthProvider';\
 
 const IMAGE_DIMENSION = 50;
@@ -139,6 +141,12 @@ export default function CreateUser({ navigation }) {
                     <Text style={styles.inputTitle}>Site Name: </Text>
                     <View style={styles.pickerContainer}>
                       <Picker
+                        iosIcon={<Ionicons
+                        name="ios-chevron-down"
+                        size={10}
+                        style={{position: 'absolute', top: 'auto', right: -200}}
+                        color={colours.themePrimary}
+                      />}
                         selectedValue={values.siteID}
                         onValueChange={(value) =>
                           setFieldValue('siteID', value)
